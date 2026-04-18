@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Feed</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <a href="./index.html" class="logo">
+      <span class="logo-icon">H</span>
+      <span class="logo-text">HelpHub AI</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="./index.html">Home</a>
+      <span class="clicked-btn">Explore</span>
+      <a href="./leaderboard.html">Leaderboard</a>
+      <a href="./ai-center.html">Ai Center</a>
+      <a href="./login.html" class="join-btn">Join the platform</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="explore-hero">
+    <p class="ai-tag">EXPLORE / FEED</p>
+    <h1>Browse help requests with filterable community context.</h1>
+    <p class="ai-sub">
+      Filter by category, urgency, skills, and location to surface the best
+      matches.
+    </p>
+  </section>
+
+  <!-- MAIN -->
+  <section class="explore-container">
+    <!-- FILTERS -->
+    <div class="filters">
+      <p class="filter-tag">FILTERS</p>
+      <h2>Refine the feed</h2>
+
+      <label>Category</label>
+      <select>
+        <option>All categories</option>
+      </select>
+
+      <label>Urgency</label>
+      <select>
+        <option>All urgency levels</option>
+      </select>
+
+      <label>Skills</label>
+      <input type="text" placeholder="React, Figma, Git/GitHub" />
+
+      <label>Location</label>
+      <input type="text" placeholder="Karachi, Lahore, Remote" />
+    </div>
+
+    <!-- FEED -->
+    <div class="feed">
+      <!-- CARD -->
+      <div class="feed-card">
+        <div class="tags">
+          <span class="tag">Web Development</span>
+          <span class="tag red">High</span>
+          <span class="tag green">Solved</span>
+        </div>
+        <h3>Need help</h3>
+        <p>help needed</p>
+        <div class="meta">Ayesha Khan • Karachi</div>
+        <button>Open details</button>
+      </div>
+
+      <div class="feed-card">
+        <div class="tags">
+          <span class="tag">Web Development</span>
+          <span class="tag red">High</span>
+          <span class="tag green">Solved</span>
+        </div>
+        <h3>Portfolio responsive before demo</h3>
+        <p>HTML/CSS layout issue before deadline.</p>
+        <div class="meta">Sara Noor • Karachi</div>
+        <button>Open details</button>
+      </div>
+
+      <div class="feed-card">
+        <div class="tags">
+          <span class="tag">Design</span>
+          <span class="tag yellow">Medium</span>
+          <span class="tag green">Open</span>
+        </div>
+        <h3>Figma feedback</h3>
+        <p>Need better hierarchy and spacing.</p>
+        <div class="meta">Ayesha Khan • Lahore</div>
+        <button>Open details</button>
+      </div>
+
+      <div class="feed-card">
+        <div class="tags">
+          <span class="tag">Career</span>
+          <span class="tag blue">Low</span>
+          <span class="tag green">Solved</span>
+        </div>
+        <h3>Mock interview help</h3>
+        <p>Frontend interview practice needed.</p>
+        <div class="meta">Sara Noor • Remote</div>
+        <button>Open details</button>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

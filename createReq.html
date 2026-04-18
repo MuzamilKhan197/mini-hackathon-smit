@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Request - HelpHub AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="./index.html" class="logo">
+      <span class="logo-icon">H</span>
+      <span class="logo-text">HelpHub AI</span>
+    </a>
+    <div class="nav-links">
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./explore.html">Explore</a>
+      <a href="./createReq.html" class="active-nav-btn">Create Request</a>
+    </div>
+  </nav>
+
+  <div class="request-wrapper">
+
+    <div class="request-hero">
+      <small>CREATE REQUEST</small>
+      <h1>Turn a rough problem into a clear help request.</h1>
+      <p>Use built-in AI suggestions for category, urgency, tags, and a stronger description rewrite.</p>
+    </div>
+
+    <div class="request-body">
+
+      <div class="request-card request-form">
+
+        <label>Title</label>
+        <input type="text" placeholder="Need review on my JavaScript quiz app before submission">
+
+        <label>Description</label>
+        <textarea
+          placeholder="Explain the challenge, your current progress, deadline, and what kind of help would be useful."></textarea>
+
+        <div class="request-form-row">
+          <div>
+            <label>Tags</label>
+            <input type="text" placeholder="JavaScript, Debugging, Review">
+          </div>
+          <div>
+            <label>Category</label>
+            <select>
+              <option>Web Development</option>
+              <option>Data Science</option>
+              <option>Design</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="request-form-row" style="max-width: 50%;">
+          <div>
+            <label>Urgency</label>
+            <select>
+              <option>High</option>
+              <option>Medium</option>
+              <option>Low</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="request-actions">
+          <button class="btn-outline">Apply AI suggestions</button>
+          <button class="btn-primary">Publish request</button>
+        </div>
+      </div>
+
+      <div class="request-card request-ai-card">
+        <span class="ai-panel-label">AI ASSISTANT</span>
+        <h2>Smart request guidance</h2>
+
+        <div class="ai-suggestion-list">
+          <div class="ai-suggestion-item">
+            <span class="key">Suggested category</span>
+            <span class="value">Community</span>
+          </div>
+          <div class="ai-suggestion-item">
+            <span class="key">Detected urgency</span>
+            <span class="value">Low</span>
+          </div>
+          <div class="ai-suggestion-item">
+            <span class="key">Suggested tags</span>
+            <span class="value">Add more detail for smarter tags</span>
+          </div>
+          <div class="ai-suggestion-item">
+            <span class="key">Rewrite suggestion</span>
+            <span class="value">Start describing the challenge to generate a stronger version.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
