@@ -1,0 +1,225 @@
+
+    :root {
+      --bg-color: #f1ede3;
+      --panel-dark: #1a1f1e;
+      --panel-light: #f9f8f3;
+      --accent-teal: #149a84;
+      --text-main: #1a1f1e;
+      --text-muted: #5e625f;
+      --border-color: #e2dfd5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus+Jakarta+Sans', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.5;
+      padding-bottom: 4rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* NAVBAR */
+    .topbar {
+      padding: 1.5rem 0;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .brand-badge {
+      background: var(--accent-teal);
+      color: white;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a[data-nav="messages"] {
+      color: var(--text-main);
+      background: #dde4e0;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+    }
+
+    /* HERO */
+    .page-hero {
+      margin-top: 2rem;
+    }
+
+    .hero-panel {
+      background: var(--panel-dark);
+      color: white;
+      padding: 4rem;
+      border-radius: 40px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+      opacity: 0.8;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      max-width: 800px;
+    }
+
+    .hero-panel p {
+      font-size: 1.1rem;
+      opacity: 0.7;
+    }
+
+    /* GRID LAYOUT */
+    .messaging-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .panel {
+      background: var(--panel-light);
+      padding: 2.5rem;
+      border-radius: 40px;
+    }
+
+    .section-kicker {
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      font-weight: 800;
+      color: var(--accent-teal);
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.05em;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      letter-spacing: -0.02em;
+    }
+
+    /* CONVERSATION LIST */
+    .msg-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 24px;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border: 1px solid rgba(0,0,0,0.02);
+    }
+
+    .msg-content h4 {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .msg-content p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      max-width: 400px;
+    }
+
+    .msg-time {
+      background: #eef3f1;
+      padding: 0.5rem 0.75rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-align: center;
+      min-width: 60px;
+    }
+
+    /* FORM STYLES */
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    select, textarea {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      background: white;
+      font-family: inherit;
+      font-size: 0.95rem;
+    }
+
+    textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    .btn-send {
+      width: 100%;
+      background: var(--accent-teal);
+      color: white;
+      border: none;
+      padding: 1rem;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .btn-send:hover {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 850px) {
+      .messaging-grid { grid-template-columns: 1fr; }
+      .hero-panel { padding: 2rem; }
+    }

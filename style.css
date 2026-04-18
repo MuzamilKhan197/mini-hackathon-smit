@@ -110,7 +110,6 @@ a:active {
 @media (max-width: 900px) {
   .navbar {
     padding: 16px 20px;
-    flex-wrap: wrap;
     align-items: center;
   }
   /* let the logo sit on the left and nav-links take a full row */
